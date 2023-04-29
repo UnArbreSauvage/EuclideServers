@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^9.21.0",
+    "http": "^0.0.1-security",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "rimraf": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/pako.esm.mjs",
+      "require": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*",
+    "./lib/*": "./lib/*",
+    "./lib/zlib/*": "./lib/zlib/*",
+    "./lib/utils/*": "./lib/utils/*"
+  }
+}
